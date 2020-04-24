@@ -1,0 +1,110 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Lists/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Nodes": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Lists.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Lists.dll": {}
+        }
+      },
+      "Nodes/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Nodes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Nodes.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lists/1.0.0": {
+      "type": "project",
+      "path": "../Lists/Lists.csproj",
+      "msbuildProject": "../Lists/Lists.csproj"
+    },
+    "Nodes/1.0.0": {
+      "type": "project",
+      "path": "../Nodes/Nodes.csproj",
+      "msbuildProject": "../Nodes/Nodes.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Lists >= 1.0.0",
+      "Nodes >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\fabio\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\fabio\\source\\repos\\Modulo3\\Consola\\Consola.csproj",
+      "projectName": "Consola",
+      "projectPath": "C:\\Users\\fabio\\source\\repos\\Modulo3\\Consola\\Consola.csproj",
+      "packagesPath": "C:\\Users\\fabio\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fabio\\source\\repos\\Modulo3\\Consola\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\fabio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\fabio\\source\\repos\\Modulo3\\Lists\\Lists.csproj": {
+              "projectPath": "C:\\Users\\fabio\\source\\repos\\Modulo3\\Lists\\Lists.csproj"
+            },
+            "C:\\Users\\fabio\\source\\repos\\Modulo3\\Nodes\\Nodes.csproj": {
+              "projectPath": "C:\\Users\\fabio\\source\\repos\\Modulo3\\Nodes\\Nodes.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Recodme.Formacao.Modulo3.TiposAbstratosDeDados.Lists</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nodes\Nodes.csproj" />
+  </ItemGroup>
+
+</Project>

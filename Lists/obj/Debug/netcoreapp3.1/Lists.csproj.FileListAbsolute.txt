@@ -1,0 +1,12 @@
+C:\Users\fabio\source\repos\Modulo3\Lists\bin\Debug\netcoreapp3.1\Lists.deps.json
+C:\Users\fabio\source\repos\Modulo3\Lists\bin\Debug\netcoreapp3.1\Lists.dll
+C:\Users\fabio\source\repos\Modulo3\Lists\bin\Debug\netcoreapp3.1\Lists.pdb
+C:\Users\fabio\source\repos\Modulo3\Lists\bin\Debug\netcoreapp3.1\Nodes.dll
+C:\Users\fabio\source\repos\Modulo3\Lists\bin\Debug\netcoreapp3.1\Nodes.pdb
+C:\Users\fabio\source\repos\Modulo3\Lists\obj\Debug\netcoreapp3.1\Lists.csprojAssemblyReference.cache
+C:\Users\fabio\source\repos\Modulo3\Lists\obj\Debug\netcoreapp3.1\Lists.csproj.CoreCompileInputs.cache
+C:\Users\fabio\source\repos\Modulo3\Lists\obj\Debug\netcoreapp3.1\Lists.AssemblyInfoInputs.cache
+C:\Users\fabio\source\repos\Modulo3\Lists\obj\Debug\netcoreapp3.1\Lists.AssemblyInfo.cs
+C:\Users\fabio\source\repos\Modulo3\Lists\obj\Debug\netcoreapp3.1\Lists.csproj.CopyComplete
+C:\Users\fabio\source\repos\Modulo3\Lists\obj\Debug\netcoreapp3.1\Lists.dll
+C:\Users\fabio\source\repos\Modulo3\Lists\obj\Debug\netcoreapp3.1\Lists.pdb

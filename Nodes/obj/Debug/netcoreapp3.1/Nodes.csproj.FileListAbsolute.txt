@@ -1,0 +1,8 @@
+C:\Users\fabio\source\repos\Modulo3\Nodes\bin\Debug\netcoreapp3.1\Nodes.deps.json
+C:\Users\fabio\source\repos\Modulo3\Nodes\bin\Debug\netcoreapp3.1\Nodes.dll
+C:\Users\fabio\source\repos\Modulo3\Nodes\bin\Debug\netcoreapp3.1\Nodes.pdb
+C:\Users\fabio\source\repos\Modulo3\Nodes\obj\Debug\netcoreapp3.1\Nodes.csproj.CoreCompileInputs.cache
+C:\Users\fabio\source\repos\Modulo3\Nodes\obj\Debug\netcoreapp3.1\Nodes.AssemblyInfoInputs.cache
+C:\Users\fabio\source\repos\Modulo3\Nodes\obj\Debug\netcoreapp3.1\Nodes.AssemblyInfo.cs
+C:\Users\fabio\source\repos\Modulo3\Nodes\obj\Debug\netcoreapp3.1\Nodes.dll
+C:\Users\fabio\source\repos\Modulo3\Nodes\obj\Debug\netcoreapp3.1\Nodes.pdb
