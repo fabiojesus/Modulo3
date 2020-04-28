@@ -136,18 +136,76 @@ namespace Recodme.Formacao.Modulo3.Consola
             //}
             #endregion
 
-            var list = new SimpleLinkedList<string>("First");
-            list.Add("Second");
-            list.Add("Third");
-            list.Add("Forth");
-            list.Add("Fifth");
-            list.Add("Sixth");
-            list.Add("Seventh");
-            list.Add("Eighth");
-            list.Add("Seventh");
-            list.Add("Nineth");
-            list.AddFirst("zero");
-            list.Replace("Seventh", "Hello");
+            //var list = new SimpleLinkedList<string>("First");
+            //list.Add("Second");
+            //list.Add("Third");
+            //list.Add("Forth");
+            //list.Add("Fifth");
+            //list.Add("Sixth");
+            //list.Add("Seventh");
+            //list.Add("Eighth");
+            //list.Add("Seventh");
+            //list.Add("Nineth");
+            //list.AddFirst("zero");
+            //list.Replace("Seventh", "Hello");
+
+            //foreach(var item in list)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            var carA = new Car() { Model = "A", Brand ="A" };
+            var carB = new Car() { Model = "A", Brand = "A" };
+            Car carC = null;
+            carC.Brand = "A";
+            Console.WriteLine(carA == carB);
+
+
+            var dll = new DualLinkedList<int>();
+
+            dll.AddFirst(3);
+            PrintList(dll);
+            dll.AddFirst(2);
+            PrintList(dll);
+            dll.AddLast(4);
+            PrintList(dll);
+            dll.AddFirst(1);
+            PrintList(dll);
+            dll.AddFirst(0);
+            PrintList(dll);
+            dll.AddLast(28);
+            PrintList(dll);
+            Console.WriteLine(dll.Count);
+            var first = 0;
+            var last = 0;
+            dll.RemoveFirst(out first);
+            PrintList(dll);
+            dll.RemoveLast(out last);
+            PrintList(dll);
+            dll.Remove(dll.First.Next, out first);
+            PrintList(dll);
+            Console.WriteLine(first);
+            Console.WriteLine(last);
         }
+
+        
+
+        public static void PrintList<T>(DualLinkedList<T> dll)
+        {
+            Console.Clear();
+            var current = dll.First;
+            while (current != null)
+            {
+                Console.WriteLine(current);
+                current = current.Next;
+            }
+            
+        }
+    }
+
+    public class Car
+    {
+        public string Brand { get; set; }
+        public string Model { get; set; }
     }
 }

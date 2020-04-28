@@ -1,10 +1,12 @@
-﻿using Recodme.Formacao.Modulo3.TiposAbstratosDeDados.Nodes;
+﻿using Recodme.Formacao.Modulo3.TiposAbstratosDeDados.Lists.Iterators;
+using Recodme.Formacao.Modulo3.TiposAbstratosDeDados.Nodes;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 
 namespace Recodme.Formacao.Modulo3.TiposAbstratosDeDados.Lists
 {
+  
     public class SimpleLinkedList<T> : IEnumerable<T>
     {
         public SimpleLinkedList(T first)
@@ -18,7 +20,7 @@ namespace Recodme.Formacao.Modulo3.TiposAbstratosDeDados.Lists
             get
             {
                 var current = First;
-                for(var i = 0; i <= position; i++)
+                for (var i = 0; i <= position; i++)
                 {
                     current = current.Next;
                 }
@@ -32,7 +34,7 @@ namespace Recodme.Formacao.Modulo3.TiposAbstratosDeDados.Lists
             {
                 var current = First;
                 var count = 0;
-                while(current!= null)
+                while (current != null)
                 {
                     count++;
                     current = current.Next;
@@ -51,21 +53,21 @@ namespace Recodme.Formacao.Modulo3.TiposAbstratosDeDados.Lists
             }
         }
 
-        public void Replace(T old, T @new, bool onlyFirst=false)
+        public void Replace(T old, T @new, bool onlyFirst = false)
         {
             var current = First;
             ExecuteOnIteration((current) => current.Data = (current.Data.Equals(old)) ? @new : current.Data);
         }
 
 
-        public SimpleLinkedNode<T> First{get;set;}
+        public SimpleLinkedNode<T> First { get; set; }
 
         public SimpleLinkedNode<T> Last
         {
             get
             {
                 var last = First;
-                while(last.Next != null)
+                while (last.Next != null)
                 {
                     last = last.Next;
                 }
@@ -102,7 +104,7 @@ namespace Recodme.Formacao.Modulo3.TiposAbstratosDeDados.Lists
         {
             var current = First;
             var array = new T[Length];
-            for(var i = 0; i < Length; i++)
+            for (var i = 0; i < Length; i++)
             {
                 array[i] = current.Data;
                 current = current.Next;
@@ -110,10 +112,15 @@ namespace Recodme.Formacao.Modulo3.TiposAbstratosDeDados.Lists
             return array;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="node"></param>
+        /// <returns></returns>
         public T Remove(SimpleLinkedNode<T> node)
         {
             var current = First;
-            while(current.Next != node)
+            while (current.Next != node)
             {
                 current = current.Next;
             }
@@ -123,15 +130,14 @@ namespace Recodme.Formacao.Modulo3.TiposAbstratosDeDados.Lists
             return val;
         }
 
-
         public IEnumerator<T> GetEnumerator()
         {
-            throw new NotImplementedException();
+            return new SimpleLinkedListEnum<T>(this);
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            throw new NotImplementedException();
+            return (IEnumerator)GetEnumerator();
         }
     }
 }
